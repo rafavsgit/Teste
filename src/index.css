@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-unbounded: 'Unbounded', sans-serif;
+
+  --color-brand-dark: #3c3c3b;
+  --color-brand-teal: #007261;
+  --color-brand-accent: #00c3a6;
+  --color-text-muted: rgba(255, 255, 255, 0.72);
+  --color-card-solid: rgba(217, 217, 217, 0.19);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    font-family: var(--font-jakarta);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+}
